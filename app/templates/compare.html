@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+
+<!-- //banner -->
+
+
+<!-- graph values -->
+
+<!-- //graph values -->
+
+<div class="btmspace-80 center">
+	<div class="sph">
+	<h3 class="heading mb-sm-5 mb-4 text-center">Best Model Statistics</h3>
+	</div>
+	<!-- <h3 class=" font-x2 bold underlined">Best Model Statistics</h3> -->
+	<p class="text-center">Here we present the  best statistics of the deployed model and comparision between them.</p>
+</div>
+
+<div class="container1">
+	<div class="box1">
+	  <div class="chart1" data-percent="99" >99.2%</div>
+	  <h2>Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="90" >90%</div>
+	  <h2>Validation Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="3.2" >3.2%</div>
+	  <h2>Loss(*10)</h2>
+	</div>
+    <h2>Random Forest</h2>
+  </div><br><br>
+
+  <div class="container1">
+	<div class="box1">
+	  <div class="chart1" data-percent="99" >99.2%</div>
+	  <h2>Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="90" >90%</div>
+	  <h2>Validation Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="3.2" >3.2%</div>
+	  <h2>Loss(*10)</h2>
+	</div>
+    <h2>Naive baise</h2>
+  </div><br><br>
+
+  <div class="container1">
+	<div class="box1">
+	  <div class="chart1" data-percent="99" >99.2%</div>
+	  <h2>Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="90" >90%</div>
+	  <h2>Validation Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="3.2" >3.2%</div>
+	  <h2>Loss(*10)</h2>
+	</div>
+    <h2>SVM Classifier</h2>
+  </div><br><br>
+
+  <div class="container1">
+	<div class="box1">
+	  <div class="chart1" data-percent="99" >99.2%</div>
+	  <h2>Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="90" >90%</div>
+	  <h2>Validation Accuracy</h2>
+	</div>
+	<div class="box1">
+	  <div class="chart1" data-percent="3.2" >3.2%</div>
+	  <h2>Loss(*10)</h2>
+	</div>
+    <h2>Decision Tree</h2>
+  </div>
+
+  <!-- progress js -->
+<script type="text/javascript">
+	$(function() {
+	$('.chart1').easyPieChart({
+	  size: 160,
+	  barColor: "#36e617",
+	  scaleLength: 0,
+	  lineWidth: 15,
+	  trackColor: "#525151",
+	  lineCap: "circle",
+	  animate: 6000,
+	});
+  });
+  </script>
+
+<!-- Products & Services -->
+
+<!-- //Products & Services -->
+</html>
+
+{% endblock %}
